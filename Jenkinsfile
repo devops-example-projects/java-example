@@ -33,7 +33,7 @@ pipeline{
         stage("Publish Test Reports")
         {
             steps{
-                junit 'java-example/target/test-reports/*.xml'
+                junit 'target/test-reports/*.xml'
             }
         }
         stage("Package")
