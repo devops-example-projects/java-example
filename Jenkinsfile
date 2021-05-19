@@ -34,7 +34,7 @@ pipeline{
         {
             steps{
                 //junit 'target/test-reports/*.xml'
-                junit 'build/reports/**/*.xml'
+                junit '**/test-results/test/*.xml'
             }
         }
         stage("Package")
